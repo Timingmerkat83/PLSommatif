@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-09-10, 09:04:35
+    Author     : PProulx
+*/
+
+@font-face {
+    font-family: 'roquetteplain';
+    src: url ('../fonts/roquetteplain.ttf');
+    font-weight: normal;
+    font-style: normal;
+     }
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'ComicsCarToon';
+    font-size: 35px;
+    font-style: normal;
+    color: brown;
+    text-shadow: 2px 2px 2px black;
+   
+}
+h2{
+   font-family: 'ComicsCarToon'; 
+   text-align: center;
+   margin-right:10%;
+   text-shadow: 2px 2px 2px black;
+
+}
+p {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: orange;
+    text-shadow: 4px 2px 2px black;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    margin-right: 12%;
+    margin-left: 12%;
+    text-align: left;
+    
+}
+h3{
+    text-align: center;
+    color: white;
+    font-family: 'ComicsCarToon';
+    font-size: 35px;
+    font-style: normal;
+    text-shadow: 2px 2px 2px black;
+}
+.paragraph{
+    padding: 20px;
+    display: block;
+}
+.small{
+    width: 30px;
+    height: 50px;
+    transition: 0.3s
+}
+.small:hover{
+    width:70px;
+    height: 90px;
+}
+.crash{
+    background-image:url('../images/Crash/crash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a:link { /*lien non-visité */
+    color: white ;
+	}    
+a:visited { /* lien visité */
+    color: white ;} 
+a:hover { /* survol du lien */
+	color: black;
+	text-decoration: none;
+        cursor: pointer;
+	}   
+a:active { /*lien actif */
+color: #0000FF;}
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient( #0074fb, black 100px);
+  top: 0;
+  z-index: 100;
+  border-radius: 20px;
+   width: 70%;
+  margin-left: auto;
+ margin-right: auto;
+   }
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+ transition-property: background, border-radius;
+ transition: 1s ease;
+}
+.navbar a:active, .dropdown:active .dropbtn {
+    background-color: black;
+    color: white;
+  }
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 200px;
+}
+button{
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    text-align: center;
+    background-color: orange;
+}
+.logo{
+    margin-left: 35%;
+    width: 30%;    
+}
+.neo{
+    width:300px;
+}
+.left {
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.right {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bee {transition: transform .1s}
+
+.container{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+

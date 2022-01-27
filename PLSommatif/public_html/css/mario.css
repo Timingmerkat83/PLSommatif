@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-09-10, 09:19:03
+    Author     : PProulx
+*/
+
+@font-face {
+    font-family: 'Super Mario Maker Font';
+    src: url ('../fonts/Super Mario Maker Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family: 'Super Mario Maker Font';
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+    font-style: normal;
+font-size: 50px;    
+}
+p{
+    text-shadow: 3px 2px  black;
+}
+.textbox{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h2{
+   font-family: 'Super Mario Maker Font';
+    color: white; 
+    text-align: center;
+    margin-right: 300px;
+    text-shadow: 3px 4px black;
+    z-index:2;
+}
+h3{
+    font-family: 'Super Mario Maker Font';
+    color: #06de6a;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 30px;
+}
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient( #c82323, black 100px);
+  top: 0;
+  z-index: 1;
+  border-radius: 20px;
+   }
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  border-radius: 100px;
+}
+.navbar a:active, .dropdown:active .dropbtn {
+    background-color: black;
+    color: white;
+  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+.dropdown-content a {
+  color: white;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-bottom: auto;
+  padding-top: auto;
+}
+footer{
+    align-content: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: yellow;
+  font-family: impact;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+.paragraph{
+    background-image: url("../images/Mario/blankblock.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+    width: 1000px;
+    height: 1000px;
+    color: white;
+    font-family: arial;
+    text-align: left;
+    margin-left: 400px;
+    margin-right: auto;
+}
+.marioimg{
+    float: right;
+    position: absolute;
+}
+.small{
+    width: 60px;
+    height: 45px;
+    transition: 0.1s
+}
+.small:hover{
+     -webkit-transform: scaleX(-1);
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  color: black;
+  background-color: greenyellow;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
+  padding: 20px;
+  text-align: left;
+}
+.container{
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+a:link { /*lien non-visité */
+    color: white ;
+    font-style: normal;
+	}    
+a:visited { /* lien visité */
+    color: white ;
+    font-style: normal;
+    font-weight: bolder;
+} 
+a:hover { /* survol du lien */
+	color: brown;
+	text-decoration: none;
+	text-transform: fullsize-kana;
+        cursor: pointer;
+	}   
+a:active { /*lien actif */
+color: #0000FF;}

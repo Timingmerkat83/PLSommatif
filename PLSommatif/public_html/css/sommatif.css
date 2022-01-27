@@ -1,0 +1,359 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-09-08, 09:10:19
+    Author     : PProulx
+*/
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}   
+.myStyle{
+    font-family: 'Pretendo', sans-serif;
+    
+}
+hr{         
+    width: 80%; 
+    position: inherit;
+    height: 4px;
+    background: black;;
+    border: none;
+    }
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: Verdana;
+}
+p {
+    text-align: left;
+    font-family: arial;
+    font-size: 25px;
+    color: white;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+#gradiant{
+    background-image: linear-gradient(blue,orange,green);
+    background-attachment: fixed;
+    height: 100%;
+    z-index: 1;
+}
+.link{
+    background-image:url('../images/Link/zeldabackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#mario{
+    background-image:url('../images/Mario/mariobros.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.crash{
+    background-image:url('../images/Crash/crash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a:link { /*lien non-visité */
+    color: white ;
+    font-style: normal;
+	}    
+a:visited { /* lien visité */
+    color: white ;
+    font-style: normal;
+} 
+a:hover { /* survol du lien */
+	color: black;
+	text-decoration: none;
+	text-transform: fullsize-kana;
+        cursor: pointer;
+	}   
+a:active { /*lien actif */
+color: #0000FF;}
+
+/* css pour la bar de naviguation */
+.navbar {
+  overflow: hidden;
+  background-color: #0074fb;
+  top: 0;
+  z-index: 100;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: auto;
+ margin-right: auto;
+ border-right:1px solid black;
+   }
+.navbar a {
+  font-size: 30px;
+  color: white;
+  font-family: 'pretendo';
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+ transition-property: background, border-radius;
+ transition: 0.8s ease all;
+ float: left;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
+  color: black;
+   -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  border-radius: 20px;
+}
+.navbar a:active, .dropdown:active .dropbtn {
+    background-color: black;
+    color: white;
+  }
+.dropdown{
+       float: left;
+       overflow: hidden;
+   }
+ .dropdown.dropbtn{
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 190px;
+  box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  overflow: hidden;
+}
+.dropdown-content a {
+  color: white;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-bottom: auto;
+  padding-top: auto;
+  transition: all 0.5s;
+}
+.dropdown-content a:hover {
+  background-color: firebrick;
+  color: black;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 300px;
+}
+/* Boutton*/
+button{
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Pretendo';
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s ease all;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.textcraft{
+    text-align: center;
+    margin-left: auto;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+.logo{
+    margin-left: 35%;
+    width: 30%;    
+}
+#block{
+    width: 1%;
+    height: 700px;
+    background-color: black;
+    float: left;
+    margin-right: 40px;
+    position: relative;
+}
+img.alignRight{
+        float:right;
+        margin: 0 0 0 0;
+    } 
+img.alignLeft{
+        float:left;
+        margin: 0 15px 0 50px;
+    }
+ p.alignLeft{
+        text-align:left;
+        margin: 0 200px 0 200px;
+    }
+p.alignRight{
+        text-align: right;
+        margin: 0 0 0 0;
+    }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.unselect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+}   
+.banner{
+    background-image: url(../images/banner.png);
+}
+fieldset {
+    background-image: linear-gradient(to left, purple, coral);
+    width: 40%;
+    border: 5px solid blue;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+    box-shadow: 0 0 20px blue;
+}
+label{
+    float: left;
+    width: 30%;
+    margin-right: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+input{
+    font-family: arial;
+    font-size: 20px;
+    box-shadow: 5px 5px black;
+}
+input:focus{
+    border-color: #9ecaed;
+    box-shadow: 0 0 20px #9ecaed;
+}
+.inp:hover{
+    border-color: #9ecaed; 
+    box-shadow: 0 0 30px #9ecaed;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+legend{
+    text-align: left;
+    background-image: linear-gradient(to right, #1080f3, purple );
+    border: 5px solid blue;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 20px black;
+}
+textarea {
+    width: 100%;
+    font-family: Palatino, sans-serif;
+    font-size: 20px;
+}
+.youvegotmail{
+    color: red;
+    }
+footer{
+    text-align: center;
+    color: black;
+    font-family: georgia;
+    background-color: gray;
+    width: 75%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    }
+    .plimg{
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .plimg:hover {
+        opacity: 0,6;
+    }
+/* Bouton média sociaux */
+.social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:30px;
+  height:30px;
+  transition: 0.3s ease;
+}
+.social-icons:hover li:hover img:hover{
+    opacity: 0.5;
+    width:40px;
+    height:40px;
+}
+#sendbuttons{    
+    text-align: center;
+	margin: 15px;
+}
+iframe{
+    margin-left: 35%;
+}
+table{
+    background-color: #905309;
+    padding:20px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-style: outset;
+    border: 5px solid yellow;
+    width: 70%;
+    border-spacing: 20px;
+    font-family: Arial;
+    box-shadow: 0 0 10px black;
+}
+td{
+    border-radius: 20px;
+    border: 3px solid black;
+    align-content: center;
+    padding-left:auto;
+    padding-right: auto;
+    text-align: center;
+    box-shadow: 3px 2px 10px black;   
+}
+ul{
+    margin-left: 13%;
+    font-family: Arial black;
+    
+}
+select{
+    border-radius:10px;
+    height: 30px;
+    font-size: 20px;
+}

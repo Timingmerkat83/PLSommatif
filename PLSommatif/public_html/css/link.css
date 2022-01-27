@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-09-14, 09:19:19
+    Author     : PProulx
+*/
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient(gray, black 100%);
+  top: 0;
+  z-index: 1;
+  border-radius: 20px;
+   width: 70%;
+  margin-left: auto;
+ margin-right: auto;
+   }
+ .navbar a:active, .dropdown:active .dropbtn {
+    background-color: black;
+    color: white;
+  }
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  border-radius: 200px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+.dropdown-content a {
+  color: black;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding-bottom: auto;
+  padding-top: auto;
+}
+
+p{
+    color: black;
+    margin-left:13%;
+    margin-right:13%;
+    text-align: left;
+    font-size: 20px;
+    font-family: arial;
+    display: block;
+    
+}
+h2{
+    font-family: 'Triforce';
+    font-size: 60px;
+    text-shadow: 4px 2px  black;
+    color: orangered;
+}
+h3{
+    font-family: 'Triforce';
+    font-size: 30px;
+    color: green;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    margin-right: 15%;
+}
+h4{
+    font-family: 'Triforce';
+    color: #06de6a;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+hr{         
+    width: 80%; 
+    height: 2px;
+    background: black;;
+    border: none;
+    }
+.paragraph{
+    background-color:black;
+    color:white;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    border-style: outset;
+    border-width: 6px;
+    border-color: gray;
+}
+blockquote { 
+  display: block;
+  opacity: 0.5;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+ p.alignLeft{
+        text-align:left;
+        margin: 0 200px 0 200px;
+    }
+p.alignRight{
+        text-align: right;
+        margin: 0 20% 0 0;        
+    }
+figure {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  padding: 0.5em;
+  float: right;
+  
+}
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 5px;
+  margin-left:150px;
+  text-align: center;
+  margin-top:50%;
+}

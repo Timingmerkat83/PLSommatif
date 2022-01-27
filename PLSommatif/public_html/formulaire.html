@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<!--
+	Fichier 	: Moyens de télécommunication sommatif
+	Description     : Sommatif
+	Date 		: 15/09/2020	
+	Auteur 		: Pierre-Luc Proulx
+	Groupe		: 319AI
+-->
+<html lang="fr">
+    <head>
+        <!-- Pour le support des caractères accentués -->
+	<meta charset="utf-8">
+	<!-- Pour la portabilité - "Responsive Web Design" -->		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta-données -->
+	<meta name="description" content="PL Sommatif">
+	<meta name="author" content="Pierre-Luc Proulx">
+	<!-- Titre de la page -->
+	<title>Contacter PL</title>
+	<!-- Lien vers la feuille de style CSS -->
+        <link href="css/sommatif.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="images/Adobe-Pl-icon.png">>
+    </head>
+<body>
+    <div class="banner">
+         <img class="textcraft" style="height:10%" src="images/textcraft.png" alt="textcraft">
+    </div>
+    <div id="gradiant">
+        <div class="navbar">
+            <!--barre de naviguation-->
+            <nav>       
+                <a href="index.html">Accueil</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Personnages</button>
+                    <div class="dropdown-content">
+                        <a style="background-color:red" href="mario.html">
+                            <img src="images/Mario/Mario_emblem.png" width="30" height="30" alt="mario">
+                            Super Mario</a>
+                        <a style="background-color:green" href="link.html">
+                            <img src="images/Link/zellda.png" width="40" height="30" alt="triforce">
+                            Link</a>
+                        <a style="background-color:orange" href="crash.html">
+                            <img src="images/Crash/wumpa.png" width="30" height="30" alt="wumpa fruit">
+                            Crash Bandicoot</a>
+                    </div>
+                </div>
+                <a href="formulaire.html">Contacter-moi</a>
+                <a href="liens.html">Liens</a>
+                </div>
+            </nav>  
+            <header>
+                <h2 class='myStyle'><i>Contacter-moi pour plus en savoir davantages!</i></h2>
+            </header>
+            <hr>
+            <br>
+            <br>
+            <!-- Début du formulaire -->
+        <form method="post" action="mailto:votrecourriel@gmail.com" enctype="text/plain" name="contact">
+            <br>
+            <fieldset>
+            <!-- Légende de la section du formulaire -->
+            <legend><b>Profil de l'utilisateur</b></legend>
+				<!-- Étiquette -->
+                <label for="nom">Nom:</label>
+				<!-- Zone de texte obligatoire pour le nom -->
+                <input type="text" name="nom" size="25" id="nom" required>
+                <br>
+				<label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" size='20' required>
+                <br>
+                <!-- Zone de texte de type courriel -->
+                    <label for="courriel">Courriel :</label>
+                <input type="email" size="30" name="courriel" id="courriel" required>
+                    <br>
+                <label for="age">Âge :</label>
+                <input type="number" min="15" max="65" name="age" id="age" required>
+                <br>
+                <label for="date">Date de la question:</label>
+                <input type="date" size="15" name="date" id="date" required>
+                <br>   
+                <!-- Cases à cocher pour le sexe -->
+                        <label for="sexe"> Sexe :</label>
+                        <input type="radio" id="sexe" name="type" checked value="homme"> <b>Homme</b>
+                        <input type="radio" name="type" value="femme"> <b>Femme</b>
+                            <input type="radio" name="type" value="autres"> <b>Autres</b>
+                            <input type="radio" name="type" value="idk"> <b>Je sais pas</b>
+                            <br>
+            </fieldset>
+            <br>
+            <!--Liste déroulante des différentes pages de ce site -->
+            <fieldset> 
+                <legend><b>Sujet de la question:</b></legend>
+                <label for="PageQuestion">Sur quelle page avez-vous une question?:</label>
+            <select id="pages" name="page">
+                <optgroup label="Menu">
+                    <option value="menu">Menu Principal</option>
+                    <option value="Liens"> Table de liens</option>
+                </optgroup>
+                <optgroup label="Personnages">
+                    <option value="mario">Super Mario <img src="images/icons/MarioIcon.png" alt="mario"/></option>
+                    <option value="Link">The Legend of Zelda (Link)</option>
+                    <option value="Crash">Crash Bandicoot</option>
+                </optgroup>
+            </select>   
+                <br>
+                <br>
+                <br>
+                <label for="Question">Veuillez inscrire votre question:</label>
+            <textarea rows="1" name="commentaires" placeholder="Inscrivez votre question"></textarea>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Commentaires</b></legend>
+		<!-- Zone de commentaires (mémo)-->
+                    <textarea rows="10" name="commentaires" placeholder="Inscrivez ici vos commentaires"></textarea>
+            </fieldset>
+            <div id='sendbuttons'>
+            <!-- Bouton Envoyer -->
+            <div class="inp">
+		<input type="submit" value="Envoyer la question">
+            </div>
+            <div class="inp">
+		<!-- Bouton Effacer -->
+                <input type="reset" value="Effacer et recommencer">
+            </div>
+            </div>
+        </form>
+        <footer>
+        <h5> Créé par Pierre-Luc Proulx - Pour un retour d'information, contacter-moi au:<a href='mailto:pierrelucproulx@gmail.com'><span class="youvegotmail"> pierrelucproulx@gmail.com</span></a>.</h5>   
+        <ul class="social-icons">   
+    <li><a href="http://www.facebook.com" target='blank'><img src="images/icons/Facebook.png" alt="Facebook"/></a></li>
+    <li><a href="https://www.instagram.com/sparky.pl/" target='blank'><img src="images/icons/Instagram.png" alt="Instagram"/></a></li>
+    <li><a href='https://www.pinterest.fr/Pierreskate14/_saved/' target='blank'><img src="images/icons/Pinterest.png" alt="Pinterest"/></a>
+</ul>
+    </footer>
+        </div>
+</body>
+</html>
+            
+            

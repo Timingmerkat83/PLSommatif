@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+        Fichier 	: Moyens de télécommunication sommatif
+        Description     : Sommatif
+        Date 		: 08/09/2020	
+        Auteur 		: Pierre-Luc Proulx
+        Groupe		: 319AI
+-->
+<html lang="fr">
+    <head>
+        <!-- Pour le support des caractères accentués -->
+        <meta charset="utf-8">
+        <!-- Pour la portabilité - "Responsive Web Design" -->		
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Meta-données -->
+        <meta name="description" content="PL Sommatif">
+        <meta name="author" content="Pierre-Luc Proulx">
+        <!-- Titre de la page -->
+        <title>PL Sommatif</title>
+        <!-- Lien vers la feuille de style CSS -->
+        <link href="css/sommatif.css" rel="stylesheet" type="text/css"/>
+        <link href="css/slidehow.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="images/Adobe-Pl-icon.png">
+    </head>
+    <body>
+        <div class="banner">
+            <img class="textcraft" style="height:10%" src="images/textcraft.png" alt="textcraft">
+        </div>
+        <div id="gradiant">
+            <div class="navbar">
+                <nav>         
+                    <a href="index.html">Accueil</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Personnages</button>
+                        <div class="dropdown-content">
+                            <a style="background-color:red" href="mario.html">
+                                <img src="images/Mario/Mario_emblem.png" width="30" height="30" alt="mario">
+                                Super Mario</a>
+                            <a style="background-color:green" href="link.html">
+                                <img src="images/Link/zellda.png" width="40" height="30" alt="triforce">
+                                Link</a>
+                            <a style="background-color:orange" href="crash.html">
+                                <img src="images/Crash/wumpa.png" width="30" height="30" alt="wumpa fruit">
+                                Crash Bandicoot</a>
+                        </div>
+                    </div>
+                    <a href="formulaire.html">Contacter-moi</a>
+                    <a href="liens.html">Liens</a>
+                </nav>
+            </div>
+            <br>
+            <!-- Zone SlideShow-->
+            <header>
+                <div class='slideshow-contenant'>
+                    <div class='mySlides fade'>
+                        <a href="https://mario.nintendo.com/" target="blank">
+                            <img src="images/Mario/35thanniversarymario.jpg" style="width:1000px" alt="35e anniversaire de Mario"/></a>
+                        <div class='text'>35e anniversaire de Super Mario!</div>
+                    </div>      
+                    <div class='mySlides fade'>
+                        <a href="https://supermario3dallstars.nintendo.com/" target="blank">
+                            <img class="plimg" src="images/Mario/mario3Dallstars.jpg" style="width:100%" alt="Super Mario 3D All Stars"/></a>
+                        <div class="text">Trois des plus grandes aventures de Mario - le tout dans un seul paquet! Annoncé pour le 18 septembre sur Nintendo Switch!</div>
+                    </div>
+                    <div class='mySlides fade'>   
+                        <a href="https://www.nintendo.com/games/detail/hyrule-warriors-age-of-calamity-switch/" target="blank">
+                            <img class="plimg" src="images/Link/hyrulewarriors.jpg" style="width:100%" alt="hyrule warriors"/></a>
+                        <div class='text'>Hyrule Warriors Age of Calamity annoncé pour la Nintendo Switch prévu pour le 20 novembre!</div>
+                    </div>           
+                    <div class="mySlides fade">
+                        <a href="https://www.crashbandicoot.com/crash4" target="blank">
+                            <img class="plimg" src="images/Crash/crash4.png" style="width:100%" alt="crash bandicoot 4"/></a>
+                        <div class="text">Une suite de la trilogie Crash Bandicoot est prévue pour le 2 octobre sur la Playstation 4!</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides (-1)">&larr;</a>
+                    <a class="next" onclick="plusSlides (1)">&rarr;</a>
+                </div>  
+
+                <div style="text-align:center">
+                    <span class="dot" onClick="currentSlide(1)"></span>
+                    <span class="dot" onClick="currentSlide(2)"></span>
+                    <span class="dot" onClick="currentSlide(3)"></span>
+                    <span class="dot" onClick="currentSlide(4)"></span>
+                </div>
+                <script src="javascript/slide.js" type="text/javascript"></script>
+            </header>
+            <hr>
+            <br>
+            <!-- Zone news-->
+            <div id="block">
+                <script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><' + '/script>');</script>
+                <script type="text/javascript">(function () {
+                    var params = {rssmikle_url: "https://www.p-nintendo.com/", rssmikle_frame_width: "300", rssmikle_frame_height: "700", rssmikle_target: "_blank", rssmikle_font: "Arial, Helvetica, sans-serif", rssmikle_font_size: "12", rssmikle_border: "off", responsive: "off", rssmikle_css_url: "", text_align: "left", text_align2: "left", corner: "off", scrollbar: "off", autoscroll: "on", scrolldirection: "up", scrollstep: "3", mcspeed: "20", sort: "New", rssmikle_title: "on", rssmikle_title_sentence: "", rssmikle_title_link: "", rssmikle_title_bgcolor: "#0066FF", rssmikle_title_color: "#FFFFFF", rssmikle_title_bgimage: "", rssmikle_item_bgcolor: "#080808", rssmikle_item_bgimage: "", rssmikle_item_title_length: "55", rssmikle_item_title_color: "#FF0A1B", rssmikle_item_border_bottom: "on", rssmikle_item_description: "on", item_link: "off", rssmikle_item_description_length: "150", rssmikle_item_description_color: "#DEDEDE", rssmikle_item_date: "gl1", rssmikle_timezone: "Etc/GMT", datetime_format: "%b %e, %Y %l:%M:%S %p", item_description_style: "text", item_thumbnail: "full", article_num: "15", rssmikle_item_podcast: "off", keyword_inc: "", keyword_exc: ""};
+                    feedwind_show_widget_iframe(params);
+                    })();
+                </script>
+            </div>
+            <br>
+            <!-- Expliquations du site-->
+            <main>
+                <div style='margin-left:15%'>
+                    <h1 class="myStyle"><span style="margin-left:20px"> Bienvenue sur le site qui presentera trois personnages iconiques</span></h1>
+                    <p>Dans notre jeunesse, on a déjà, dans la majorité d'entre nous, joué à des jeux vidéos.<img src="images/CheerfulAntiqueDassie-max-1mb.gif" style='float:right;width:30%' alt=""/> On a aussi, tous eu un jeu qui nous a marqué.
+                        <br><br>Il existe un nombre contradictoire d'univers de personnages fictifs de jeu vidéos, on ne peut y avoir tous joué certes, mais des jeux iconiques qui ont bien vielli avec des grandes communautés ayant la faculté de liberté d'expression d'opinions sur leur jeu favoris!      
+                        <br>
+                        <br>
+                        Nous les appelons avatars ou PNJ suivant leur rôle, nous les adorons comme nous les détestons mais une chose est sûre : ils n'ont jamais été aussi populaires. Des grands noms aux petites figurations, des fiers héros aux sadiques vilains, les personnages de jeux vidéo n'auront plus de secrets pour vous après la lecture de ces fiches. Ne cherchez pas les détails de toutes les aventures de tel ou tel personnage, les sites de fans sont bien plus complets sur ce point. Ce qui nous intéresse ici, c'est l'analyse de la psychologie ou de l'affect du personnage mais aussi leur création et la place qu’il occupe dans l’histoire vidéoludique. 
+                        Personnages de jeux iconique tentent d'expliquer pourquoi ces petits bonshommes faits de pixels déchaînent autant les passions.
+                    </p>
+                </div>
+            </main>
+            <br>
+            <img src="images/NAGoKsJ8gDCBQ6yK6Bwmpw_store_banner_image.png" style="width:100%" alt="banner"/>
+            <br>
+            <br>
+            <p style="margin-left:33%; font-family:Super Mario Maker Font">
+                Date de remise du projet: <span style='color:blue'> Mercredi 30 Septembre 2020</span>
+            </p>
+            <footer>
+                <h5> Créé par Pierre-Luc Proulx - Pour un retour d'information, contacter-moi au:<a href='mailto:pierrelucproulx@gmail.com'><span class="youvegotmail"> pierrelucproulx@gmail.com</span></a>.</h5>   
+                <ul class="social-icons">   
+                    <li><a href="http://www.facebook.com" target='blank'><img src="images/icons/Facebook.png" alt="Facebook"/></a></li>
+                    <li><a href="https://www.instagram.com/sparky.pl/" target='blank'><img src="images/icons/Instagram.png" alt="Instagram"/></a></li>
+                    <li><a href='https://www.pinterest.fr/Pierreskate14/_saved/' target='blank'><img src="images/icons/Pinterest.png" alt="Pinterest"/></a>
+                </ul>
+            </footer>
+
+        </div>
+    </body>
+</html> 
